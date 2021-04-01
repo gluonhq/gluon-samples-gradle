@@ -1,0 +1,20 @@
+mainClassName = 'com.gluonhq.hello.HelloGluon'
+
+javafx {
+    modules = [ 'javafx.controls' ]
+    version = "$libraryVersions.javafx"
+}
+
+dependencies {
+    compile "com.gluonhq:charm-glisten:$libraryVersions.glisten"
+}
+
+gluonClient {
+    attachConfig {
+        version = "$libraryVersions.attach"
+        services 'display', 'lifecycle', 'statusbar', 'storage'
+    }
+
+    reflectionList = ["com.gluonhq.impl.charm.glisten.control.skin.GlistenButtonSkin"]
+}
+

@@ -1,0 +1,11 @@
+mainClassName = 'hellofx.HelloFXML'
+
+javafx {
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+    version = "$libraryVersions.javafx"
+}
+
+gluonClient {
+    bundlesList = ["hellofx.hello"]
+    reflectionList = ["hellofx.HelloController"]
+}

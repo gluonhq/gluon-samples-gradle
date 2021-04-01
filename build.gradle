@@ -1,0 +1,31 @@
+plugins {
+    id 'base'
+    id 'org.openjfx.javafxplugin' version '0.0.9' // Client plugin goes berserk is apply is false here
+    id 'com.gluonhq.client-gradle-plugin' version '0.1.38' apply false
+}
+
+ext.libraryVersions = [
+        attach: '4.0.10',
+        glisten: '6.0.5',
+        javafx : '15.0.1'
+]
+
+subprojects {
+    apply plugin: 'application'
+    apply plugin: 'org.openjfx.javafxplugin'
+    apply plugin: 'com.gluonhq.client-gradle-plugin'
+    
+    repositories {
+        mavenCentral()
+        maven {
+            url 'https://nexus.gluonhq.com/nexus/content/repositories/releases'
+        }
+    }
+
+    gluonClient {
+        target = "host"
+        if (project.hasProperty('target')) {
+            target = project.getProperty('target')
+        }
+    }
+}

@@ -1,0 +1,6 @@
+mainClassName = 'hellofx.HelloFX'
+
+javafx {
+    modules = [ 'javafx.controls' ]
+    version = "$libraryVersions.javafx"
+}
