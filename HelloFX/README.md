@@ -3,14 +3,10 @@
 
 A simple Hello World application with Java 11+, JavaFX 15+ and GraalVM.
 
-## Documentation
-
-Read about this sample [here](https://docs.gluonhq.com/#_hellofx)
-
 ## Quick Instructions
 
-We use [Gluon Client](https://docs.gluonhq.com/) to build a native image for platforms including desktop, android and iOS.
-Please follow the Gluon Client prerequisites as stated [here](https://docs.gluonhq.com/#_requirements).
+We use [GluonFX plugin](https://docs.gluonhq.com/) to build a native image for platforms including desktop, android and iOS.
+Please follow the GluonFX prerequisites as stated [here](https://docs.gluonhq.com/#_requirements).
 
 ### Desktop
 

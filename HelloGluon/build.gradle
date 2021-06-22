@@ -9,7 +9,7 @@ dependencies {
     compile "com.gluonhq:charm-glisten:$libraryVersions.glisten"
 }
 
-gluonClient {
+gluonfx {
     attachConfig {
         version = "$libraryVersions.attach"
         services 'display', 'lifecycle', 'statusbar', 'storage'

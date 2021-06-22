@@ -1,7 +1,7 @@
 plugins {
     id 'base'
     id 'org.openjfx.javafxplugin' version '0.0.9' // Client plugin goes berserk is apply is false here
-    id 'com.gluonhq.client-gradle-plugin' version '0.1.38' apply false
+    id 'com.gluonhq.gluonfx-gradle-plugin' version '1.0.1' apply false
 }
 
 ext.libraryVersions = [
@@ -13,7 +13,7 @@ ext.libraryVersions = [
 subprojects {
     apply plugin: 'application'
     apply plugin: 'org.openjfx.javafxplugin'
-    apply plugin: 'com.gluonhq.client-gradle-plugin'
+    apply plugin: 'com.gluonhq.gluonfx-gradle-plugin'
     
     repositories {
         mavenCentral()
@@ -22,8 +22,8 @@ subprojects {
         }
     }
 
-    gluonClient {
-        target = "host"
+    gluonfx {
+        target = 'host'
         if (project.hasProperty('target')) {
             target = project.getProperty('target')
         }

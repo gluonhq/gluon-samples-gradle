@@ -5,7 +5,7 @@ javafx {
     version = "$libraryVersions.javafx"
 }
 
-gluonClient {
+gluonfx {
     bundlesList = ["hellofx.hello"]
     reflectionList = ["hellofx.HelloController"]
 }
