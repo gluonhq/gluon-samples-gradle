@@ -5,8 +5,8 @@ plugins {
 }
 
 ext.libraryVersions = [
-        attach: '4.0.10',
-        glisten: '6.0.5',
+        attach: '4.0.19',
+        glisten: '6.2.2',
         javafx : '21'
 ]
 
