@@ -6,7 +6,7 @@ javafx {
 }
 
 dependencies {
-    compile "com.gluonhq:charm-glisten:$libraryVersions.glisten"
+    implementation "com.gluonhq:charm-glisten:$libraryVersions.glisten"
 }
 
 gluonfx {

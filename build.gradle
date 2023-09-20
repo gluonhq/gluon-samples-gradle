@@ -1,19 +1,22 @@
 plugins {
     id 'base'
-    id 'org.openjfx.javafxplugin' version '0.0.9' // Client plugin goes berserk is apply is false here
-    id 'com.gluonhq.gluonfx-gradle-plugin' version '1.0.1' apply false
+    id 'org.openjfx.javafxplugin' version '0.1.0' // Client plugin goes berserk is apply is false here
+    id 'com.gluonhq.gluonfx-gradle-plugin' version '1.0.21-SNAPSHOT' apply false
 }
 
 ext.libraryVersions = [
         attach: '4.0.10',
         glisten: '6.0.5',
-        javafx : '15.0.1'
+        javafx : '21'
 ]
 
 subprojects {
     apply plugin: 'application'
-    apply plugin: 'org.openjfx.javafxplugin'
     apply plugin: 'com.gluonhq.gluonfx-gradle-plugin'
+
+    configure([project(':HelloFX'), project(':HelloFXML'), project(':HelloGluon')]) {
+        apply plugin: 'org.openjfx.javafxplugin'
+    }
     
     repositories {
         mavenCentral()
