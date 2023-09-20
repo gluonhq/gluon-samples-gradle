@@ -1,7 +1,7 @@
 plugins {
     id 'base'
     id 'org.openjfx.javafxplugin' version '0.1.0' // Client plugin goes berserk is apply is false here
-    id 'com.gluonhq.gluonfx-gradle-plugin' version '1.0.21-SNAPSHOT' apply false
+    id 'com.gluonhq.gluonfx-gradle-plugin' version '1.0.21' apply false
 }
 
 ext.libraryVersions = [
