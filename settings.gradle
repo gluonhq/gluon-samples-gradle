@@ -5,6 +5,9 @@ pluginManagement {
         maven {
             url 'https://nexus.gluonhq.com/nexus/content/repositories/releases'
         }
+        maven {
+            url 'https://oss.sonatype.org/content/repositories/snapshots'
+        }
     }
 }
 

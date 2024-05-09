@@ -1,5 +1,10 @@
 mainClassName = 'hellofx.HelloFXML'
 
+application {
+    mainModule = 'hellofxml'
+    mainClass = 'hellofx.HelloFXML'
+}
+
 javafx {
     modules = [ 'javafx.controls', 'javafx.fxml' ]
     version = "$libraryVersions.javafx"

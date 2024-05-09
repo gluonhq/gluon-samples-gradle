@@ -1,1 +1,6 @@
 mainClassName = 'hello.HelloWorld'
+
+application {
+    mainModule = 'helloworld'
+    mainClass = 'hello.HelloWorld'
+}

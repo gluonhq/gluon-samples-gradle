@@ -1,13 +1,13 @@
 plugins {
     id 'base'
-    id 'org.openjfx.javafxplugin' version '0.1.0' // Client plugin goes berserk is apply is false here
-    id 'com.gluonhq.gluonfx-gradle-plugin' version '1.0.21' apply false
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+    id 'com.gluonhq.gluonfx-gradle-plugin' version '1.0.22' apply false
 }
 
 ext.libraryVersions = [
-        attach: '4.0.19',
-        glisten: '6.2.2',
-        javafx : '21'
+        attach: '4.0.20',
+        glisten: '6.2.3',
+        javafx : '21.0.2'
 ]
 
 subprojects {
@@ -22,6 +22,9 @@ subprojects {
         mavenCentral()
         maven {
             url 'https://nexus.gluonhq.com/nexus/content/repositories/releases'
+        }
+        maven {
+            url 'https://oss.sonatype.org/content/repositories/snapshots'
         }
     }
 
