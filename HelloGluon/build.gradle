@@ -1,5 +1,10 @@
 mainClassName = 'com.gluonhq.hello.HelloGluon'
 
+application {
+    mainModule = 'hellogluon'
+    mainClass = 'com.gluonhq.hello.HelloGluon'
+}
+
 javafx {
     modules = [ 'javafx.controls' ]
     version = "$libraryVersions.javafx"

@@ -1,7 +1,7 @@
 
 # HelloFX
 
-A simple Hello World application with Java 11+, JavaFX 15+ and GraalVM.
+A simple Hello World application with Java 11+, JavaFX 17+ and GraalVM.
 
 ## Quick Instructions
 

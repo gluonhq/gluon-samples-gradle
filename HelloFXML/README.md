@@ -1,7 +1,7 @@
 
 # HelloFXML
 
-A simple Hello World application with Java 11+, JavaFX 15+ (with FXML) and GraalVM.
+A simple Hello World application with Java 11+, JavaFX 17+ (with FXML) and GraalVM.
 
 ## Quick Instructions
 
